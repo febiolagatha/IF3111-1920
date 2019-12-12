@@ -1,0 +1,23 @@
+.judul{
+  text-align: center;
+}
+
+.subjudul{
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.formulir{
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 10px;
+}
+
+.formulir select{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tombol{
+  text-align: right;
+}
