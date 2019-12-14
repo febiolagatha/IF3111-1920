@@ -32,5 +32,26 @@
       <p>Laporan/Komentar Terakhir</p>
     </div>
 
+    <?php foreach($posts as $post) : ?>
+	<!-- Isi -->
+	<div class="wrap">
+		<div class="konten">
+			<h1> Laporan Tentang <?php echo $post['laporan']; ?></h1>
+			<hr>
+			<p>
+				<?php echo word_limiter($post['aspek'], 60); ?>
+			</p>
+			<p>
+				Lampiran : <?php echo $post['upload']; ?>
+			</p>
+			<form>
+				<label>Waktu: <?php echo $post['tanggal']; ?></label>
+				<a href="posts/<?php echo $post['id']; ?>" class="next">Selengkapnya →</a>
+			</form>
+		</div>
+	</div>
+	<!-- Akhir Isi -->
+	<?php endforeach; ?>
+
   </body>
   </html>
