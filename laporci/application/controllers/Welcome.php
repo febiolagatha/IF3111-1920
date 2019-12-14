@@ -33,7 +33,7 @@ class Welcome extends CI_Controller {
 
 	public function tampilLaporan($id = NULL)
 	{
-			$data['post'] = $this->Post_model->tampilLapor($id);
+			$data['post'] = $this->Lapor_model->tampilLapor($id);
 
 			if (empty($data['post'])) {
 				show_404();
