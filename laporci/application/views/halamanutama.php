@@ -46,7 +46,7 @@
 			</p>
 			<form>
 				<label>Waktu: <?php echo $post['tanggal']; ?></label>
-				<a href="posts/<?php echo $post['id']; ?>" class="next">Selengkapnya →</a>
+				<a href="selengkapnya.php <?php echo $post['id']; ?>" class="next">Selengkapnya →</a>
 			</form>
 		</div>
 	</div>
